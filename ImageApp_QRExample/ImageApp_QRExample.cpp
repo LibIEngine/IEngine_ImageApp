@@ -13,28 +13,6 @@
 #endif
 #endif
 
-BOOL BaseLib_OperatorCharset_UnicodeToUTF(LPCWSTR lpszSource, CHAR* ptszDst, int* pInt_Len)
-{
-	int nLen = WideCharToMultiByte(CP_UTF8, 0, lpszSource, -1, NULL, 0, NULL, NULL);
-	if (0 == nLen)
-	{
-		return FALSE;
-	}
-	*pInt_Len = WideCharToMultiByte(CP_UTF8, 0, lpszSource, -1, ptszDst, nLen, NULL, NULL);
-
-	return TRUE;
-}
-BOOL BaseLib_OperatorCharset_UTFToUnicode(LPCSTR lpszSource, WCHAR* ptszDst, int* pInt_Len)
-{
-	int nUTFLen = MultiByteToWideChar(CP_UTF8, 0, lpszSource, -1, NULL, 0);
-	if (0 == nUTFLen)
-	{
-		return FALSE;
-	}
-	*pInt_Len = MultiByteToWideChar(CP_UTF8, 0, lpszSource, -1, ptszDst, nUTFLen);
-	return TRUE;
-}
-
 int main()
 {
 #ifdef _MSC_BUILD
