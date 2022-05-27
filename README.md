@@ -7,6 +7,7 @@ iengine 例子代码
 请使用vs打开,并且使用 x86和debug模式
 
 1. ImageApp_QRExample               二维码识别与创建例子
+2. ImageApp_InfoSet                 图像信息获取与设置
 
 # 使用说明
 要使用我们的代码例子.你可能需要做一部分修改.WINDOWS可以直接用VS打开并且编译,LINUX可以使用命令编译  

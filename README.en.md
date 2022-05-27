@@ -7,6 +7,7 @@ The example code of the engine contains the following examples, and the correspo
 please use vs open it,and use x86 and debug mode.  
 
 1. ImageApp_QRExample                  QR Create and parse exmaple
+2. ImageApp_InfoSet                    Image information set and get
 
 #### use
 To use our code example. You may need to make some modifications. WINDOWS can be opened and compiled directly with VS, and LINUX can be compiled with commands  
